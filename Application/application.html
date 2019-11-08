@@ -8,53 +8,60 @@
         <header>
                 <nav>
                     <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="file:///C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Login\login.html">Login</a></a></li>
-                        <li><a href="file:///C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Application\application.html ">Application</a></li>
+                        <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Webpage\index.html#hero">Home</a></li>
+                        <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Webpage\index.html#about">About</a></li>
+                        <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Webpage\index.html#contact">Contact</a></li>
+                        <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Login\login.html">Login</a></a></li>
+                        <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Application\application.html ">Application</a></li>
                     </ul>
                 </nav>
             </header>
 
 
+<main>
 
-
+       
  <form>
+    
+
+
   <table>
    <tr>
     <td>Name :</td>
-    <td><input type="text"></td>
-   </tr>
-   <tr>
-    <td>Gender :</td>
-    <td>
-     <input type="radio" name="Gender"> Male
-     <input type="radio" name="Gender"> Female
-    </td>
+    <td><input type="text" name="name" placeholder="John Doe"></td>
    </tr>
    <tr>
     <td>Email :</td>
-    <td><input type="email"></td>
+    <td><input type="email" name="email" placeholder="fakeemail@gmail.com"></td>
    </tr>
+
    <tr>
-    <td>Phone no :</td>
-    <td>
-     <select>
-      <option>310</option>
-      <option>909</option>
-      <option>213</option>
-      <option>323</option>
-      <option>424</option>
-      <option>123</option>
-     </select>
-     <input type="phone">
-    </td>
+    <td>Income :</td>
+    <td><input type="number" name="income" min="0" step="500" value="20000"></td>
    </tr>
+
+   <tr>
+    <td>Credit Score :</td>
+    <td><input type="number" name="credit" min="0" max="850" ></td>
+    </tr>
+
+
+   <tr>
+        <td>Phone # :</td>
+        <td><input type="tel" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="310-123-4567"></td>
+    </tr>
+
+   <tr>
+        <td>Date of Birth :</td>
+        <td><input type="date" name="bday"></td>
+       </tr>
+   
    <tr>
     <td><input type="submit" value="Submit"></td>
    </tr>
   </table>
  </form>
+
+</main>
 </body>
 </html>
