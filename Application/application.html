@@ -11,7 +11,6 @@
                         <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Webpage\index.html#hero">Home</a></li>
                         <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Webpage\index.html#about">About</a></li>
                         <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Webpage\index.html#contact">Contact</a></li>
-                        <li><a href=" \login.html">Login</a></a></li>
                         <li><a href="C:\Users\tahaz\OneDrive\Documents\Projects\willCodeForFood\OneSubmit\Application\application.html ">Application</a></li>
                     </ul>
                 </nav>
@@ -57,10 +56,22 @@
        </tr>
    
    <tr>
-    <td><input type="submit" value="Submit"></td>
+    <td><input type="button" name="b1" value="save data" onClick="aa();"></td>
    </tr>
   </table>
  </form>
+
+ <script type ="text/javascript">
+    function aa(){
+        var xmlhttp;
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","insert.php?nm="+document.getElementById("name").value+"&em="+document.getElementById("email").value+"&inc="+document.getElementById("income").value,false);
+        xmlhttp.send(null);
+    }
+ 
+ 
+ 
+ </script>
 
 </main>
 
